@@ -6,6 +6,7 @@ def hello_t(array)
     yield array[i]
     i += 1
   end
+  return array
 end
 
 hello_t(names) {|name| if name.start_with?("T")
